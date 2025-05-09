@@ -1,0 +1,102 @@
+# ejercicio 1
+
+for i in range(101):
+    print(i)
+
+
+# ejercicio 2
+
+def contar_digitos():
+    num = int(input("Ingrese un número entero: "))
+    print(f"El número {num} tiene {len(str(abs(num)))} dígitos.")
+
+
+#ejercicio 3
+
+def sumar_entre_valores():
+    a = int(input("Ingrese el primer valor: "))
+    b = int(input("Ingrese el segundo valor: "))
+    suma = sum(range(a + 1, b))
+    print(f"La suma de los números entre {a} y {b} es: {suma}")
+
+# ejerccio 4
+
+def sumar_secuencia():
+    total = 0
+    while True:
+        num = int(input("Ingrese un número entero (0 para terminar): "))
+        if num == 0:
+            break
+        total += num
+    print(f"El total acumulado es: {total}")
+
+sumar_secuencia()
+
+# ejercicio 5
+
+Python
+import random
+
+def adivinar_numero():
+    numero_aleatorio = random.randint(0, 9)
+    intentos = 0
+    while True:
+        num = int(input("Adivine un número entre 0 y 9: "))
+        intentos += 1
+        if num == numero_aleatorio:
+            print(f"Felicidades! Adivinaste el número en {intentos} intentos.")
+            break
+        elif num < numero_aleatorio:
+            print("El número es mayor.")
+        else:
+            print("El número es menor.")
+
+adivinar_numero()
+
+# ejercicio 6
+
+Python
+for i in range(100, -1, -2):
+    print(i)
+
+# ejercicio 7
+
+def sumar_hasta_n():
+    n = int(input("Ingrese un número entero positivo: "))
+    suma = sum(range(n + 1))
+    print(f"La suma de los números desde 0 hasta {n} es: {suma}")
+
+sumar_hasta_n()
+
+# ejercicio 8
+
+def contar_numeros():
+    cantidad = 10  # Cambia a 100 para procesar 100 números
+    pares = 0
+    impares = 0
+    negativos = 0
+    positivos = 0
+    for _ in range(cantidad):
+        num = int(input("Ingrese un número entero: "))
+        if num % 2 == 0:
+            pares += 1
+        else:
+            impares += 1
+        if num < 0:
+            negativos += 1
+        elif num > 0:
+            positivos += 1
+    print(f"Pares: {pares}, Impares: {impares}, Negativos: {negativos}, Positivos: {positivos}")
+
+contar_numeros()
+
+# ejercicio 9
+
+def calcular_media():
+    cantidad = 10  # Cambia a 100 para procesar 100 números
+    suma = 0
+    for _ in range(cantidad):
+        num = int(input("Ingrese un número entero: "))
+        suma += num
+    media = suma / cantidad
+    print(f"La media es: {media}")
