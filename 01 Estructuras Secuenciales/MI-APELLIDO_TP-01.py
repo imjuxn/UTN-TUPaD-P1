@@ -47,7 +47,7 @@ try:
     campo_email.send_keys("juan.silva96@hotmail.com")
     # Opcional: Agrega un pequeño tiempo de espera para que la página cargue completamente
     campo_contraseña = driver.find_element(By.ID, "password")
-    campo_contraseña.send_keys("Caca123456789@")
+    campo_contraseña.send_keys("contrasenaponer")
     time.sleep(5)
     selector_ingresar_xpath = "//button[text()='INGRESAR']"
     if click_button(driver, selector_ingresar_xpath, by=By.XPATH):
